@@ -3,19 +3,86 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C5CA0CDFB6F09944CA4C99 /* Pods_Japanese.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867A77CEE653A85D5740910C /* Pods_Japanese.framework */; };
+		CC06FB5B238B456200E0B25A /* ExtractTextFromImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC06FB5A238B456200E0B25A /* ExtractTextFromImageController.swift */; };
+		CC06FB7C238B84D200E0B25A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = CC06FB7B238B84D200E0B25A /* tessdata */; };
+		CC18421623935F3300E1D762 /* kanji.realm in Resources */ = {isa = PBXBuildFile; fileRef = CC18421523935F3300E1D762 /* kanji.realm */; };
+		CC184218239370B000E1D762 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC184217239370B000E1D762 /* AboutView.swift */; };
+		CC219B1C239453F700B85FAE /* YahooJapanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC219B1B239453F700B85FAE /* YahooJapanAPI.swift */; };
+		CC46A8B42386650000E5FD40 /* KanjiDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46A8B32386650000E5FD40 /* KanjiDetailController.swift */; };
+		CC46A8B92387079A00E5FD40 /* KanjiAliveAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46A8B82387079A00E5FD40 /* KanjiAliveAPI.swift */; };
+		CC5BD2AD2398C16F00EC98AC /* KanjiStrokeSVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD2AC2398C16F00EC98AC /* KanjiStrokeSVGView.swift */; };
+		CC5BD2B02398C84C00EC98AC /* kanji.svg in Resources */ = {isa = PBXBuildFile; fileRef = CC5BD2AF2398C84C00EC98AC /* kanji.svg */; };
+		CC67B0E8238909940028A4A2 /* KanjiStrokeOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC67B0E7238909940028A4A2 /* KanjiStrokeOrderController.swift */; };
 		CC71CA07237FD23900C5BE36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA06237FD23900C5BE36 /* AppDelegate.swift */; };
 		CC71CA09237FD23900C5BE36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA08237FD23900C5BE36 /* SceneDelegate.swift */; };
 		CC71CA0B237FD23900C5BE36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA0A237FD23900C5BE36 /* ContentView.swift */; };
 		CC71CA0D237FD23A00C5BE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA0C237FD23A00C5BE36 /* Assets.xcassets */; };
 		CC71CA10237FD23A00C5BE36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA0F237FD23A00C5BE36 /* Preview Assets.xcassets */; };
 		CC71CA13237FD23A00C5BE36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA11237FD23A00C5BE36 /* LaunchScreen.storyboard */; };
+		CC71CA86237FD32400C5BE36 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA85237FD32400C5BE36 /* mecabrc */; };
+		CC71CA91237FD34400C5BE36 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA88237FD34400C5BE36 /* rewrite.def */; };
+		CC71CA92237FD34400C5BE36 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA89237FD34400C5BE36 /* left-id.def */; };
+		CC71CA93237FD34400C5BE36 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA8A237FD34400C5BE36 /* pos-id.def */; };
+		CC71CA94237FD34400C5BE36 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA8B237FD34400C5BE36 /* matrix.bin */; };
+		CC71CA95237FD34400C5BE36 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA8C237FD34400C5BE36 /* unk.dic */; };
+		CC71CA96237FD34400C5BE36 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA8D237FD34400C5BE36 /* sys.dic */; };
+		CC71CA97237FD34400C5BE36 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA8E237FD34400C5BE36 /* dicrc */; };
+		CC71CA98237FD34400C5BE36 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA8F237FD34400C5BE36 /* right-id.def */; };
+		CC71CA99237FD34400C5BE36 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA90237FD34400C5BE36 /* char.bin */; };
+		CC71CA9B237FD35900C5BE36 /* mecab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC71CA1F237FD28E00C5BE36 /* mecab.framework */; };
+		CC71CA9C237FD35900C5BE36 /* mecab.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC71CA1F237FD28E00C5BE36 /* mecab.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC71CA9F237FD48200C5BE36 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA9E237FD48200C5BE36 /* Tokenizer.swift */; };
+		CC71CAA1237FD4A500C5BE36 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC71CAA0237FD4A500C5BE36 /* Token.swift */; };
+		CCD7BD4623839CE200D76E6D /* ChooseToInterpretScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7BD4523839CE200D76E6D /* ChooseToInterpretScreen.swift */; };
+		CCEC8958239044A900854D3E /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC8957239044A900854D3E /* UIImage+Ext.swift */; };
+		CCEC895A239044F600854D3E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC8959239044F600854D3E /* Constants.swift */; };
+		CCEC895C2390457100854D3E /* KanjiDetailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC895B2390457100854D3E /* KanjiDetailStore.swift */; };
+		CCEC895E2390459500854D3E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC895D2390459500854D3E /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CC71CA1E237FD28E00C5BE36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC71CA1A237FD28E00C5BE36 /* mecab.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44C74468207357D7008F46FD;
+			remoteInfo = mecab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC71CA9D237FD35900C5BE36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC71CA9C237FD35900C5BE36 /* mecab.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5CF4564772CB78E2AF34CE53 /* Pods-Japanese.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese.release.xcconfig"; path = "Target Support Files/Pods-Japanese/Pods-Japanese.release.xcconfig"; sourceTree = "<group>"; };
+		867A77CEE653A85D5740910C /* Pods_Japanese.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96367B633756592A482925CA /* Pods-Japanese.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese.debug.xcconfig"; path = "Target Support Files/Pods-Japanese/Pods-Japanese.debug.xcconfig"; sourceTree = "<group>"; };
+		CC06FB5A238B456200E0B25A /* ExtractTextFromImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractTextFromImageController.swift; sourceTree = "<group>"; };
+		CC06FB7B238B84D200E0B25A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = "../../../../Downloads/tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93/tessdata"; sourceTree = "<group>"; };
+		CC18421523935F3300E1D762 /* kanji.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = kanji.realm; sourceTree = "<group>"; };
+		CC184217239370B000E1D762 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		CC219B1B239453F700B85FAE /* YahooJapanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooJapanAPI.swift; sourceTree = "<group>"; };
+		CC46A8B32386650000E5FD40 /* KanjiDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailController.swift; sourceTree = "<group>"; };
+		CC46A8B82387079A00E5FD40 /* KanjiAliveAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiAliveAPI.swift; sourceTree = "<group>"; };
+		CC5BD2AC2398C16F00EC98AC /* KanjiStrokeSVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiStrokeSVGView.swift; sourceTree = "<group>"; };
+		CC5BD2AF2398C84C00EC98AC /* kanji.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = kanji.svg; sourceTree = "<group>"; };
+		CC67B0E7238909940028A4A2 /* KanjiStrokeOrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiStrokeOrderController.swift; sourceTree = "<group>"; };
 		CC71CA03237FD23900C5BE36 /* Japanese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Japanese.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC71CA06237FD23900C5BE36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC71CA08237FD23900C5BE36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +91,24 @@
 		CC71CA0F237FD23A00C5BE36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC71CA12237FD23A00C5BE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC71CA14237FD23A00C5BE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC71CA1A237FD28E00C5BE36 /* mecab.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mecab.xcodeproj; path = "mecab-ios/mecab.xcodeproj"; sourceTree = "<group>"; };
+		CC71CA85237FD32400C5BE36 /* mecabrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = mecabrc; sourceTree = "<group>"; };
+		CC71CA88237FD34400C5BE36 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
+		CC71CA89237FD34400C5BE36 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
+		CC71CA8A237FD34400C5BE36 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
+		CC71CA8B237FD34400C5BE36 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
+		CC71CA8C237FD34400C5BE36 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
+		CC71CA8D237FD34400C5BE36 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
+		CC71CA8E237FD34400C5BE36 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
+		CC71CA8F237FD34400C5BE36 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
+		CC71CA90237FD34400C5BE36 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
+		CC71CA9E237FD48200C5BE36 /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		CC71CAA0237FD4A500C5BE36 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		CCD7BD4523839CE200D76E6D /* ChooseToInterpretScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseToInterpretScreen.swift; sourceTree = "<group>"; };
+		CCEC8957239044A900854D3E /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		CCEC8959239044F600854D3E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CCEC895B2390457100854D3E /* KanjiDetailStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiDetailStore.swift; sourceTree = "<group>"; };
+		CCEC895D2390459500854D3E /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +116,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC71CA9B237FD35900C5BE36 /* mecab.framework in Frameworks */,
+				49C5CA0CDFB6F09944CA4C99 /* Pods_Japanese.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1271348AB1BEF3A75EC986C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96367B633756592A482925CA /* Pods-Japanese.debug.xcconfig */,
+				5CF4564772CB78E2AF34CE53 /* Pods-Japanese.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CC71C9FA237FD23900C5BE36 = {
 			isa = PBXGroup;
 			children = (
+				CC71CA1A237FD28E00C5BE36 /* mecab.xcodeproj */,
 				CC71CA05237FD23900C5BE36 /* Japanese */,
 				CC71CA04237FD23900C5BE36 /* Products */,
+				CC71CA9A237FD35900C5BE36 /* Frameworks */,
+				1271348AB1BEF3A75EC986C9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +155,33 @@
 		CC71CA05237FD23900C5BE36 /* Japanese */ = {
 			isa = PBXGroup;
 			children = (
+				CC06FB7B238B84D200E0B25A /* tessdata */,
+				CC18421523935F3300E1D762 /* kanji.realm */,
+				CC5BD2AF2398C84C00EC98AC /* kanji.svg */,
+				CCEC89512390444E00854D3E /* Model */,
+				CCEC89542390446C00854D3E /* Store */,
+				CCEC89532390445900854D3E /* View */,
+				CCEC89562390448600854D3E /* Service */,
+				CCEC89552390447B00854D3E /* Extension */,
+				CC06FB5A238B456200E0B25A /* ExtractTextFromImageController.swift */,
+				CC46A8B32386650000E5FD40 /* KanjiDetailController.swift */,
+				CCD7BD4523839CE200D76E6D /* ChooseToInterpretScreen.swift */,
+				CC71CA9E237FD48200C5BE36 /* Tokenizer.swift */,
+				CC71CAA0237FD4A500C5BE36 /* Token.swift */,
+				CC71CA85237FD32400C5BE36 /* mecabrc */,
 				CC71CA06237FD23900C5BE36 /* AppDelegate.swift */,
 				CC71CA08237FD23900C5BE36 /* SceneDelegate.swift */,
 				CC71CA0A237FD23900C5BE36 /* ContentView.swift */,
-				CC71CA0C237FD23A00C5BE36 /* Assets.xcassets */,
+				CC46A8B82387079A00E5FD40 /* KanjiAliveAPI.swift */,
+				CC67B0E7238909940028A4A2 /* KanjiStrokeOrderController.swift */,
 				CC71CA11237FD23A00C5BE36 /* LaunchScreen.storyboard */,
 				CC71CA14237FD23A00C5BE36 /* Info.plist */,
+				CC71CA0C237FD23A00C5BE36 /* Assets.xcassets */,
 				CC71CA0E237FD23A00C5BE36 /* Preview Content */,
+				CC71CA87237FD34400C5BE36 /* ipadic */,
+				CCEC8959239044F600854D3E /* Constants.swift */,
+				CC184217239370B000E1D762 /* AboutView.swift */,
+				CC5BD2AC2398C16F00EC98AC /* KanjiStrokeSVGView.swift */,
 			);
 			path = Japanese;
 			sourceTree = "<group>";
@@ -75,6 +194,77 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CC71CA1B237FD28E00C5BE36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC71CA1F237FD28E00C5BE36 /* mecab.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC71CA87237FD34400C5BE36 /* ipadic */ = {
+			isa = PBXGroup;
+			children = (
+				CC71CA88237FD34400C5BE36 /* rewrite.def */,
+				CC71CA89237FD34400C5BE36 /* left-id.def */,
+				CC71CA8A237FD34400C5BE36 /* pos-id.def */,
+				CC71CA8B237FD34400C5BE36 /* matrix.bin */,
+				CC71CA8C237FD34400C5BE36 /* unk.dic */,
+				CC71CA8D237FD34400C5BE36 /* sys.dic */,
+				CC71CA8E237FD34400C5BE36 /* dicrc */,
+				CC71CA8F237FD34400C5BE36 /* right-id.def */,
+				CC71CA90237FD34400C5BE36 /* char.bin */,
+			);
+			path = ipadic;
+			sourceTree = "<group>";
+		};
+		CC71CA9A237FD35900C5BE36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867A77CEE653A85D5740910C /* Pods_Japanese.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCEC89512390444E00854D3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCEC89532390445900854D3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCEC89542390446C00854D3E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				CCEC895B2390457100854D3E /* KanjiDetailStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		CCEC89552390447B00854D3E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CCEC8957239044A900854D3E /* UIImage+Ext.swift */,
+				CCEC895D2390459500854D3E /* String+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CCEC89562390448600854D3E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CC219B1B239453F700B85FAE /* YahooJapanAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC71CA17237FD23A00C5BE36 /* Build configuration list for PBXNativeTarget "Japanese" */;
 			buildPhases = (
+				AE32D558A5535CFA4C92378A /* [CP] Check Pods Manifest.lock */,
 				CC71C9FF237FD23900C5BE36 /* Sources */,
 				CC71CA00237FD23900C5BE36 /* Frameworks */,
 				CC71CA01237FD23900C5BE36 /* Resources */,
+				CC71CA9D237FD35900C5BE36 /* Embed Frameworks */,
+				A625B3BAB17CDB3A12B7B5BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,6 +314,12 @@
 			mainGroup = CC71C9FA237FD23900C5BE36;
 			productRefGroup = CC71CA04237FD23900C5BE36 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CC71CA1B237FD28E00C5BE36 /* Products */;
+					ProjectRef = CC71CA1A237FD28E00C5BE36 /* mecab.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CC71CA02237FD23900C5BE36 /* Japanese */,
@@ -128,18 +327,83 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CC71CA1F237FD28E00C5BE36 /* mecab.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mecab.framework;
+			remoteRef = CC71CA1E237FD28E00C5BE36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		CC71CA01237FD23900C5BE36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC71CA97237FD34400C5BE36 /* dicrc in Resources */,
+				CC71CA98237FD34400C5BE36 /* right-id.def in Resources */,
+				CC71CA95237FD34400C5BE36 /* unk.dic in Resources */,
+				CC06FB7C238B84D200E0B25A /* tessdata in Resources */,
+				CC71CA86237FD32400C5BE36 /* mecabrc in Resources */,
+				CC71CA99237FD34400C5BE36 /* char.bin in Resources */,
 				CC71CA13237FD23A00C5BE36 /* LaunchScreen.storyboard in Resources */,
 				CC71CA10237FD23A00C5BE36 /* Preview Assets.xcassets in Resources */,
+				CC71CA93237FD34400C5BE36 /* pos-id.def in Resources */,
+				CC5BD2B02398C84C00EC98AC /* kanji.svg in Resources */,
 				CC71CA0D237FD23A00C5BE36 /* Assets.xcassets in Resources */,
+				CC71CA96237FD34400C5BE36 /* sys.dic in Resources */,
+				CC18421623935F3300E1D762 /* kanji.realm in Resources */,
+				CC71CA91237FD34400C5BE36 /* rewrite.def in Resources */,
+				CC71CA94237FD34400C5BE36 /* matrix.bin in Resources */,
+				CC71CA92237FD34400C5BE36 /* left-id.def in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A625B3BAB17CDB3A12B7B5BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Japanese/Pods-Japanese-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Japanese/Pods-Japanese-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Japanese/Pods-Japanese-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE32D558A5535CFA4C92378A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Japanese-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC71C9FF237FD23900C5BE36 /* Sources */ = {
@@ -147,8 +411,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC71CA07237FD23900C5BE36 /* AppDelegate.swift in Sources */,
+				CC67B0E8238909940028A4A2 /* KanjiStrokeOrderController.swift in Sources */,
+				CC219B1C239453F700B85FAE /* YahooJapanAPI.swift in Sources */,
+				CCD7BD4623839CE200D76E6D /* ChooseToInterpretScreen.swift in Sources */,
+				CC06FB5B238B456200E0B25A /* ExtractTextFromImageController.swift in Sources */,
+				CC5BD2AD2398C16F00EC98AC /* KanjiStrokeSVGView.swift in Sources */,
+				CC184218239370B000E1D762 /* AboutView.swift in Sources */,
+				CC46A8B42386650000E5FD40 /* KanjiDetailController.swift in Sources */,
+				CC71CAA1237FD4A500C5BE36 /* Token.swift in Sources */,
+				CC71CA9F237FD48200C5BE36 /* Tokenizer.swift in Sources */,
+				CCEC895C2390457100854D3E /* KanjiDetailStore.swift in Sources */,
+				CCEC895E2390459500854D3E /* String+Ext.swift in Sources */,
 				CC71CA09237FD23900C5BE36 /* SceneDelegate.swift in Sources */,
+				CCEC8958239044A900854D3E /* UIImage+Ext.swift in Sources */,
+				CC46A8B92387079A00E5FD40 /* KanjiAliveAPI.swift in Sources */,
 				CC71CA0B237FD23900C5BE36 /* ContentView.swift in Sources */,
+				CCEC895A239044F600854D3E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +478,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -216,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,6 +539,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -270,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,41 +562,47 @@
 		};
 		CC71CA18237FD23A00C5BE36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96367B633756592A482925CA /* Pods-Japanese.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Japanese/Preview Content\"";
 				DEVELOPMENT_TEAM = P9LG726DP9;
+				ENABLE_BITCODE = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Japanese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexander-greene.Japanese";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CC71CA19237FD23A00C5BE36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF4564772CB78E2AF34CE53 /* Pods-Japanese.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Japanese/Preview Content\"";
 				DEVELOPMENT_TEAM = P9LG726DP9;
+				ENABLE_BITCODE = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Japanese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexander-greene.Japanese";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

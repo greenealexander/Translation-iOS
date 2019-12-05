@@ -1,0 +1,48 @@
+PODS:
+  - CocoaLumberjack (3.6.0):
+    - CocoaLumberjack/Core (= 3.6.0)
+  - CocoaLumberjack/Core (3.6.0)
+  - GPUImage (0.1.7)
+  - PocketSVG (2.5.0)
+  - Realm (4.1.1):
+    - Realm/Headers (= 4.1.1)
+  - Realm/Headers (4.1.1)
+  - RealmSwift (4.1.1):
+    - Realm (= 4.1.1)
+  - SnapKit (5.0.1)
+  - SVGKit (2.1.1):
+    - CocoaLumberjack (~> 3.0)
+  - TesseractOCRiOS (5.0.1)
+
+DEPENDENCIES:
+  - GPUImage
+  - PocketSVG
+  - RealmSwift
+  - SnapKit
+  - SVGKit
+  - TesseractOCRiOS
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - GPUImage
+    - PocketSVG
+    - Realm
+    - RealmSwift
+    - SnapKit
+    - SVGKit
+    - TesseractOCRiOS
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  PocketSVG: 9d9c4bc8e7d8dbbc208bd21e5c92814fd3c6c34d
+  Realm: 25f0a8244cbb1c2271c922963ea8666fc2d8104d
+  RealmSwift: 9e2657b33764f80e4a4dffd6d440e24715782052
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVGKit: 652cdf7bef8bec8564d04a8511d3ab50c7595fac
+  TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
+
+PODFILE CHECKSUM: 5e72a3f5a672060e190a846493289b2c0ac236fa
+
+COCOAPODS: 1.8.4

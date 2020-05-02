@@ -11,10 +11,25 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		let navigationBarAppearace = UINavigationBar.appearance()
+		let tabBarAppearance = UITabBar.appearance()
+
+		let tintColor = UIColor(named: "accent")
+		let barTintColor = UIColor(named: "background")
+
+		navigationBarAppearace.tintColor = tintColor
+		tabBarAppearance.tintColor = tintColor
+
+		navigationBarAppearace.barTintColor = barTintColor
+		tabBarAppearance.barTintColor = barTintColor
+
+		// change navigation item title color
+		if let foregroundColor = UIColor(named: "foreground") {
+			navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor: foregroundColor]
+		}
+
 		return true
 	}
 

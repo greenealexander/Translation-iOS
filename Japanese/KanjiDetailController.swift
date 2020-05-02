@@ -221,9 +221,6 @@ struct KanjiDetailView: View {
 	}
 }
 
-
-
-
 struct KanjiNotInKanjiAliveView: View {
 	let key: String
 

@@ -18,8 +18,7 @@ struct AboutView: View {
 						.cornerRadius(16)
 						.padding()
 
-
-					Text("Sources:")
+					Text("Resources:")
 						.foregroundColor(Color("accent"))
 						.frame(maxWidth: .infinity, alignment: .leading)
 						.padding(.horizontal)
@@ -46,7 +45,7 @@ struct ToolUsedView: View {
 	var body: some View {
 		VStack {
 			HStack {
-				Image("paperclip")
+				Image(systemName: "paperclip")
 					.resizable()
 					.foregroundColor(Color("accent"))
 					.frame(width: 20, height: 20)

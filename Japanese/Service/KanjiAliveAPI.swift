@@ -19,8 +19,7 @@ class KanjiAliveAPI {
 
 	private init() {}
 
-	private func executeRequest(url: URL, _ completed: ((KanjiInfo?)->())? = nil) {
-		print(url.absoluteString)
+	private func executeRequest(kanji: String, url: URL, _ completed: ((KanjiInfo?)->())? = nil) {
 		var req = URLRequest(url: url)
 		headers.forEach {
 			let (key, value) = $0
@@ -70,7 +69,7 @@ class KanjiAliveAPI {
 				}
 
 				let info = KanjiInfo(
-					kanji: "",
+					kanji: kanji,
 					numStrokes: strokes,
 					meaning: meaning,
 					kunyomi: kunyomi,
@@ -206,7 +205,7 @@ class KanjiAliveAPI {
 			return
 		}
 
-		executeRequest(url: url) { [weak self] (kanjiInfo) in
+		executeRequest(kanji: kanji, url: url) { [weak self] (kanjiInfo) in
 			kanjiInfoReceived?(kanjiInfo)
 
 			guard let kanjiInfo = kanjiInfo else { return }
